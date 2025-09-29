@@ -18,7 +18,28 @@
     </nav>
     <main>
         <fieldset class="intro-fieldset"></fieldset>
-        <fieldset class="main-fieldset"></fieldset>
+        <fieldset class="main-fieldset">
+            <div class="file-picker-row">
+                <label for="selectedFileName" class="step-label" id="step1Label"></label>
+                <input type="text" id="selectedFileName" placeholder="" readonly style="width:40%;margin-right:1em;">
+                <button id="openFileBtn"><i class="fa-solid fa-folder-open"></i> <span id="fileBtnText"></span></button>
+            </div>
+            <div class="file-rename-row">
+                <label for="newFileName" class="step-label" id="step2Label"></label>
+                <input type="text" id="newFileName" style="width:40%;" placeholder="">
+            </div>
+            <div class="file-send-row">
+                <label class="step-label" id="step3Label"></label>
+                <button id="sendBtn" class="send-btn"></button>
+            </div>
+            <div id="fileModal" class="modal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);align-items:center;justify-content:center;">
+                <div class="modal-content" style="background:#fff;padding:2em;border-radius:8px;min-width:300px;max-width:90vw;max-height:80vh;overflow:auto;">
+                    <h3 style="margin-top:0;">Sélectionner un fichier</h3>
+                    <ul id="fileList" style="list-style:none;padding:0;margin:1em 0;"></ul>
+                    <button id="closeModalBtn" style="margin-top:1em;">Fermer</button>
+                </div>
+            </div>
+        </fieldset>
     </main>
     <script src="../texts.js"></script>
     <script src="../script.js"></script>

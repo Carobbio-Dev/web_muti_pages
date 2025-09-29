@@ -36,6 +36,15 @@ const TEXTS = {
         title: "Page 4",
         h1: "Page 4",
         button: "Retour à l'accueil",
-        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la page 4."
+        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la page 4.",
+        fileButton: "Choisir un fichier",
+        filePlaceholder: "Aucun fichier sélectionné",
+        fileApiUrl: "/api/files",
+        step1Label: "Étape 1 : Sélectionner un fichier",
+        step2Label: "Étape 2 : Saisir un nouveau nom de fichier",
+        step2Placeholder: "Nouveau nom de fichier",
+        step3Label: "Étape 3 : Valider et envoyer",
+        sendButton: "Envoyer",
+        sendApiUrl: "/api/send"
     }
 };
