@@ -1,0 +1,9 @@
+main {
+	flex: 1 0 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+body { background: #f8f8ff; }
+/* Ajoutez ici le style spécifique à page1 */
