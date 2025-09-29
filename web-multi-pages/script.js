@@ -25,6 +25,13 @@ window.addEventListener('DOMContentLoaded', function() {
         if (subtitle && texts.subtitle) {
             subtitle.textContent = texts.subtitle;
         }
+        // Intro fieldset
+        const introFieldset = document.querySelector('.intro-fieldset');
+        if (introFieldset && typeof TEXTS !== 'undefined' && TEXTS.index && TEXTS.index.fieldsetText) {
+            const p = document.createElement('p');
+            p.textContent = TEXTS.index.fieldsetText;
+            introFieldset.appendChild(p);
+        }
     }
     // Grille de tuiles sur l'accueil
     if (page === 'index' && texts.nav) {

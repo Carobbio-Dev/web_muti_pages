@@ -3,7 +3,7 @@ const TEXTS = {
     index: {
         title: "Accueil",
         h1: "Bienvenue sur la page d'accueil",
-        subtitle: "Bonjour, sélectionner une action pour commencer:",
+        fieldsetText: "Bonjour, sélectionner une action pour commencer:",
         nav: [
             { href: "pages/page1.html", label: "Créer à partir de zéro", icon: "fa-solid fa-file-circle-plus" },
             { href: "pages/page2.html", label: "Créer à partir d'un template", icon: "fa-solid fa-file-lines" },
@@ -22,7 +22,7 @@ const TEXTS = {
         title: "Page 2",
         h1: "Page 2",
         button: "Retour à l'accueil",
-        fieldsetText: "Vous êtes dans la partie \"Création à partir d'un template\".Choisissez un template parmi les options ci-dessous :",
+        fieldsetText: "Vous êtes dans la partie \"Création à partir d'un template\". Choisissez un template parmi les options ci-dessous :",
         nav: [
             { href: "template-pages/template-page1.html", label: "Template sans sauvegarde", icon: "fa-solid fa-rocket" },
             { href: "template-pages/template-page2.html", label: "Template avec sauvegarde", icon: "fa-solid fa-bomb" },

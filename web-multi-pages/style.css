@@ -22,16 +22,33 @@ body {
 nav {
     background: #a7a7a7;
 }
-
-/* Sous-titre aligné à gauche sur la page d'accueil */
-.home-subtitle {
-    text-align: left;
-    margin: 10px 0 24px 10px;
-    max-width: 600px;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #10ce3d;
+.intro-fieldset {
     flex-shrink: 0;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	margin: 0;
+	padding-left: 1rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+.intro-fieldset p {
+    color: #10ce3d;
+    font-size: 1.2em;
+    font-weight: bold;
+	text-align: left;
+}
+
+.main-fieldset {
+    flex: 1 1 0;
+	border: 2px solid #fff;
+	border-radius: 8px;
+    margin: 1.5em auto 0 auto;
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	width: 100%;
+	box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 /* Grille de tuiles sur la page d'accueil */
 .tiles-grid {
