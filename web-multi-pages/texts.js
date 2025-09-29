@@ -15,7 +15,14 @@ const TEXTS = {
         title: "Page 1",
         h1: "Page 1",
         button: "Retour à l'accueil",
-        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la page 1."
+        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la page 1.",
+         nav: [
+            { href: "index.html", label: "Quoi Suivre?", icon: "fa-solid fa-file-circle-plus" },
+            { href: "index.html", label: "Comment suivre?", icon: "fa-solid fa-file-lines" },
+            { href: "index.html", label: "Comment recevoir des informations spécifiques?", icon: "fa-solid fa-file-pen" },
+            { href: "index.html", label: "Comment transmettre des informations spécifiques?", icon: "fa-solid fa-copy" },
+            { href: "index.html", label: "Comment assurer la sauvegarde des biens et des personnes?", icon: "fa-solid fa-copy" }
+        ]
 
     },
     page2: {

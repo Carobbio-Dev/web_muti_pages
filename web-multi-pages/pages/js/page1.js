@@ -9,9 +9,40 @@ document.addEventListener('DOMContentLoaded', function() {
 		p.textContent = TEXTS.page1.fieldsetText;
 		introFieldset.appendChild(p);
 	}
-	// Main fieldset (contenu à définir)
-	const mainFieldset = document.querySelector('.main-fieldset');
-	if (mainFieldset) {
-		mainFieldset.innerHTML = '';
-	}
 });
+
+	// Liens de navigation dynamiques
+	const navLinks = document.getElementById('nav-links');
+	let links = [];
+	if (typeof TEXTS !== 'undefined' && TEXTS.page1 && Array.isArray(TEXTS.page1.nav)) {
+		links = TEXTS.page1.nav;
+	}
+	if (navLinks && links.length) {
+		navLinks.innerHTML = '';
+		links.forEach((item, idx) => {
+			const a = document.createElement('a');
+			a.href = item.href;
+			a.className = 'question-link';
+			a.style.display = 'flex';
+			a.style.justifyContent = 'space-between';
+			a.style.alignItems = 'center';
+			if (item.icon) {
+				const icon = document.createElement('i');
+				icon.className = item.icon;
+				icon.style.marginRight = '12px';
+				a.appendChild(icon);
+			}
+			const span = document.createElement('span');
+			span.textContent = item.label;
+			span.style.flex = '1';
+			span.style.textAlign = 'left';
+			a.appendChild(span);
+			const counter = document.createElement('span');
+			counter.className = 'question-counter';
+			counter.textContent = idx + 1;
+			counter.style.marginLeft = '1em';
+			counter.style.fontWeight = 'bold';
+			a.appendChild(counter);
+			navLinks.appendChild(a);
+		});
+	}
