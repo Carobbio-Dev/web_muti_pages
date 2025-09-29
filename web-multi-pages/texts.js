@@ -52,5 +52,29 @@ const TEXTS = {
         step3Label: "Étape 3 : Valider et envoyer",
         sendButton: "Envoyer",
         sendApiUrl: "/api/send"
+    },
+    template_page1: {
+        title: "Template Page 1",
+        h1: "Template Page 1",
+        button: "Retour à l'accueil",
+        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la template page 1."
+    },
+    template_page2: {
+        title: "Template Page 2",
+        h1: "Template Page 2",
+        button: "Retour à l'accueil",
+        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la template page 2."
+    },
+    template_page3: {
+        title: "Template Page 3",
+        h1: "Template Page 3",
+        button: "Retour à l'accueil",
+        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la template page 3."
+    },
+    template_page4: {
+        title: "Template Page 4",
+        h1: "Template Page 4",
+        button: "Retour à l'accueil",
+        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la template page 4."
     }
 };

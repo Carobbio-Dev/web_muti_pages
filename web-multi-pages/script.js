@@ -7,6 +7,10 @@ window.addEventListener('DOMContentLoaded', function() {
     else if (path.includes('/pages/page2.html')) page = 'page2';
     else if (path.includes('/pages/page3.html')) page = 'page3';
     else if (path.includes('/pages/page4.html')) page = 'page4';
+    else if (path.includes('/template-pages/template-page1.html')) page = 'template_page1';
+    else if (path.includes('/pages/template-pages/template-page2.html')) page = 'template_page2';
+    else if (path.includes('/pages/template-pages/template-page3.html')) page = 'template_page3';
+    else if (path.includes('/pages/template-pages/template-page4.html')) page = 'template_page4';
 
     // Récupère les textes
     const texts = TEXTS[page];
@@ -53,6 +57,7 @@ window.addEventListener('DOMContentLoaded', function() {
             btn.title = texts.button;
             btn.addEventListener('click', function() {
                 // Redirection absolue depuis n'importe quel sous-dossier
+                console.log(window.location.pathname)
                 window.location.href = window.location.origin + window.location.pathname.replace(/\/pages\/.*/, '/index.html');
             });
         }

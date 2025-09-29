@@ -20,7 +20,9 @@ main {
 }
 
 .intro-fieldset p {
-	color: white;
+    color: #10ce3d;
+    font-size: 1.2em;
+    font-weight: bold;
 	text-align: left;
 }
 .main-fieldset {
