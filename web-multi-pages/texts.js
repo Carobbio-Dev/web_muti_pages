@@ -22,7 +22,13 @@ const TEXTS = {
         title: "Page 2",
         h1: "Page 2",
         button: "Retour à l'accueil",
-        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la page 2."
+        fieldsetText: "Vous êtes dans la partie \"Création à partir d'un template\".Choisissez un template parmi les options ci-dessous :",
+        nav: [
+            { href: "template-pages/template-page1.html", label: "Template sans sauvegarde", icon: "fa-solid fa-rocket" },
+            { href: "template-pages/template-page2.html", label: "Template avec sauvegarde", icon: "fa-solid fa-bomb" },
+            { href: "template-pages/template-page3.html", label: "Template de l'espace", icon: "fa-solid fa-earth" },
+            { href: "template-pages/template-page4.html", label: "Template approximatif", icon: "fa-solid fa-worm" }
+        ]
 
     },
     page3: {
@@ -36,7 +42,7 @@ const TEXTS = {
         title: "Page 4",
         h1: "Page 4",
         button: "Retour à l'accueil",
-        fieldsetText: "Ceci est un texte inséré dynamiquement dans le fieldset de la page 4.",
+        fieldsetText: "Vous êtes dans la partie \"Duplication de fichier\".",
         fileButton: "Choisir un fichier",
         filePlaceholder: "Aucun fichier sélectionné",
         fileApiUrl: "/api/files",
