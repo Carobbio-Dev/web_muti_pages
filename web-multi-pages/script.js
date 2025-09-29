@@ -29,7 +29,15 @@ window.addEventListener('DOMContentLoaded', function() {
         const introFieldset = document.querySelector('.intro-fieldset');
         if (introFieldset && typeof TEXTS !== 'undefined' && TEXTS.index && TEXTS.index.fieldsetText) {
             const p = document.createElement('p');
-            p.textContent = TEXTS.index.fieldsetText;
+            let i = 0;
+            function typeWriter() {
+                if (i < TEXTS.index.fieldsetText.length) {
+                    p.textContent += TEXTS.index.fieldsetText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 60); // vitesse de frappe
+                }
+            }
+            typeWriter();
             introFieldset.appendChild(p);
         }
     }

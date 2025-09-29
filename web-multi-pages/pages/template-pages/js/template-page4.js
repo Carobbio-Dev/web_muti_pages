@@ -5,8 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
 	const introFieldset = document.querySelector('.intro-fieldset');
 	if (introFieldset && typeof TEXTS !== 'undefined' && TEXTS.template_page4 && TEXTS.template_page4.fieldsetText) {
 		const p = document.createElement('p');
-		p.textContent = TEXTS.template_page4.fieldsetText;
-		introFieldset.appendChild(p);
+		let i = 0;
+        function typeWriter() {
+            if (i < TEXTS.template_page4.fieldsetText.length) {
+                p.textContent += TEXTS.template_page4.fieldsetText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 60); // vitesse de frappe
+            }
+        }
+        typeWriter();	
+        introFieldset.appendChild(p);
 	}
 	// Main fieldset (contenu à définir)
 	const mainFieldset = document.querySelector('.main-fieldset');

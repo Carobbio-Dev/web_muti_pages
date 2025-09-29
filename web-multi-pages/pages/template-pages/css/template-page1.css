@@ -9,22 +9,6 @@ main {
     width: 100%;
 }
 
-.intro-fieldset {
-    flex-shrink: 0;
-	border: 2px solid #fff;
-	border-radius: 8px;
-	margin: 0;
-	padding-left: 1rem;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.intro-fieldset p {
-    color: #10ce3d;
-    font-size: 1.2em;
-    font-weight: bold;
-	text-align: left;
-}
 .main-fieldset {
     flex: 1 1 0;
 	border: 2px solid #fff;

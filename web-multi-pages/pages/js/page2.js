@@ -5,8 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
 	const introFieldset = document.querySelector('.intro-fieldset');
 	if (introFieldset && typeof TEXTS !== 'undefined' && TEXTS.page2 && TEXTS.page2.fieldsetText) {
 		const p = document.createElement('p');
-		p.textContent = TEXTS.page2.fieldsetText;
-		introFieldset.appendChild(p);
+		let i = 0;
+        function typeWriter() {
+            if (i < TEXTS.page2.fieldsetText.length) {
+                p.textContent += TEXTS.page2.fieldsetText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 60); // vitesse de frappe
+            }
+        }
+        typeWriter();	
+        introFieldset.appendChild(p);
 	}
 
 	// Injection des tuiles dans la main-fieldset (tiles-grid)
